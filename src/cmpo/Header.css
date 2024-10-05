@@ -1,0 +1,117 @@
+header {
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  border-bottom: 1px solid #444444;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: aliceblue;
+}
+
+.logo1 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo1 img {
+  height: 50px;
+  border-radius: 5px;
+}
+
+.L {
+  font-size: 24px;
+  color: #21a1f1;
+  box-shadow: #444;
+  font-weight:bold;
+}
+
+.L h1:hover {
+  color: #21a1f1;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.1rem;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+.nav a:hover {
+  color: #21a1f1;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.nav .signout-button {
+  background: none;
+  border: none;
+  color: #e06c75;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.nav .signout-button:hover {
+  color: #d9534f;
+  transform: scale(1.05);
+}
+
+.actions {
+  display: flex;
+  gap: 15px;
+}
+
+.icon-button {
+  width: 35px;
+  height: 35px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.icon-button:hover {
+  background-color: #444;
+  transform: scale(1.1);
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-info p {
+  margin: 0;
+  color:black;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .header {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 15px;
+  }
+
+  .nav ul {
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 10px;
+  }
+
+  .actions {
+      margin-top: 10px;
+  }
+}

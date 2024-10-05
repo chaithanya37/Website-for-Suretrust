@@ -1,0 +1,103 @@
+/* App.css */
+
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f9f9f9; /* Light grey background for a soft look */
+}
+
+a {
+  color: #3498db; /* Vibrant blue for links */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #2980b9; /* Slightly darker blue on hover */
+}
+
+/* Header Styles */
+header {
+  background-color: #2c3e50; /* Darker blue-gray for a sleek look */
+  color: #ecf0f1; /* Light grey text for contrast */
+  padding: 1rem 2rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.75rem; /* Larger font size for better visibility */
+}
+
+header nav {
+  margin-top: 0.5rem;
+}
+
+header nav a {
+  color: #ecf0f1; /* Light grey text for nav links */
+  margin-right: 1rem;
+  font-size: 1rem;
+}
+
+header nav a:hover {
+  color: #bdc3c7; /* Subtle lightening on hover */
+}
+
+/* Main Content Styles */
+main {
+  padding: 5rem 2rem 2rem; /* Adjusted top padding to avoid overlap with fixed header */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Button Styles */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #3498db; /* Primary button color */
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #2980b9; /* Darker shade for hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.btn-secondary {
+  background-color: #95a5a6; /* Neutral gray for secondary buttons */
+  color: #fff;
+}
+
+.btn-secondary:hover {
+  background-color: #7f8c8d; /* Darker gray on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+/* Error and Success Messages */
+.error {
+  color: #e74c3c; /* Bright red for error messages */
+  font-size: 1rem;
+}
+
+.success {
+  color: #2ecc71; /* Bright green for success messages */
+  font-size: 1rem;
+}

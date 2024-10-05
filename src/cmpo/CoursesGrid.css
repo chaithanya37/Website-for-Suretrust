@@ -1,0 +1,41 @@
+  /* Heading Style */
+  h2 {
+    font-size: 2rem;
+    color: #3498db; /* Vibrant blue for headings to match other elements */
+    margin-bottom: 20px;
+  }
+
+  /* Row Style for Course Cards */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between cards */
+  }
+
+  /* Responsive Grid Item */
+  .col-md-4 {
+    flex: 1 1 calc(33.333% - 20px); /* 3 items per row with space for gaps */
+    max-width: calc(33.333% - 20px);
+  }
+
+  /* Adjust grid item width on smaller screens */
+  @media (max-width: 768px) {
+    .col-md-4 {
+      flex: 1 1 calc(50% - 20px); /* 2 items per row */
+      max-width: calc(50% - 20px);
+    }
+  }
+
+  @media (max-width: 576px) {
+    .col-md-4 {
+      flex: 1 1 100%; /* 1 item per row */
+      max-width: 100%;
+    }
+  }
+
+  /* Additional Styles for Loading and Error Messages */
+  p {
+    font-size: 1.125rem;
+    color: #7f8c8d; /* Muted grey to match the overall color scheme */
+    text-align: center;
+  }

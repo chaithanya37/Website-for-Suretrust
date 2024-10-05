@@ -1,0 +1,251 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+.homepage {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.banner {
+  background-color: #3498db;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.banner p {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+/* Main Content Section */
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 1rem;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.text-content {
+  max-width: 50%;
+}
+
+.text-content h2 {
+  margin: 0;
+  font-size: 2rem;
+  color: #3498db;
+}
+
+.text-content h3 {
+  margin: 0.5rem 0 1.5rem;
+  font-size: 1.5rem;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn.primary {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.btn.primary:hover {
+  background-color: #2980b9;
+}
+
+.btn.secondary {
+  background-color: #95a5a6;
+  color: #fff;
+}
+
+.btn.secondary:hover {
+  background-color: #7f8c8d;
+}
+
+.video-content {
+  width: 350px;
+  height:300px;
+  
+}
+
+iframe {
+  width: 100%;
+  height: auto;
+  border: none;
+}
+
+/* Internship Projects Section */
+.internship-projects {
+  padding: 1rem 1rem;
+}
+
+.internship-projects h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #3498db; /* Changed to match the banner color */
+}
+
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.project-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px; /* Rounded corners for cards */
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Slightly deeper shadow */
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+}
+
+.project-info {
+  padding: 1rem;
+}
+
+.project-info .domain {
+  color: #3498db; /* Changed to match the banner color */
+  font-size: 0.875rem;
+}
+
+.project-info h3 {
+  margin: 0.5rem 0;
+  font-size: 1.25rem;
+}
+
+.project-info p {
+  font-size: 1rem;
+}
+
+/* Collaborators Section */
+section {
+  padding: 2rem 1rem;
+}
+
+section h2 {
+  font-size: 2rem;
+  color: #3498db;
+  margin-bottom: 1rem;
+}
+
+/* Animation Section */
+.Animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  background: linear-gradient(to right, #ff6f61, #ffcc00);
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+
+.Animation h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #ff6f61, #ffcc00);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: slideIn 2s ease-out forwards, glow 2s infinite alternate;
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 4px rgba(255, 255, 255, 0.3);
+  }
+  to {
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.5); 
+  }
+}
+.statistics-section {
+  padding: 20px;
+  text-align: center;
+}
+
+.statistics-cards {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.stat-card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  min-width: 150px;
+  flex: 1;
+}
+
+.stat-value {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.stat-label {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.internship-projects h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.project-cards {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.project-cards img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
